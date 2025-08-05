@@ -1,0 +1,9 @@
+<!-- This is a placeholder for the icon files -->
+<!-- Copy the actual PNG icons from the main project: -->
+<!-- - icon-144.png -->
+<!-- - icon-192.png -->
+<!-- - icon-512.png -->
+<!-- - icon.svg -->
+
+COPY THESE FILES FROM: D:\Keylike-New\public\icons\
+TO: D:\Keylike-New\keylike-clean\public\icons\

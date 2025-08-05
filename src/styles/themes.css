@@ -1,0 +1,374 @@
+/* Theme Variations and Custom Themes */
+
+/* High Contrast Light Theme */
+[data-theme="light-high-contrast"] {
+  --color-primary: #000000;
+  --color-primary-light: #333333;
+  --color-primary-dark: #000000;
+  --color-primary-contrast: #ffffff;
+
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-variant: #f0f0f0;
+  --color-outline: #000000;
+  --color-outline-variant: #666666;
+
+  --color-on-background: #000000;
+  --color-on-surface: #000000;
+  --color-on-surface-variant: #333333;
+
+  --color-success: #006600;
+  --color-warning: #cc6600;
+  --color-error: #cc0000;
+  --color-info: #0066cc;
+}
+
+/* High Contrast Dark Theme */
+[data-theme="dark-high-contrast"] {
+  --color-primary: #ffffff;
+  --color-primary-light: #ffffff;
+  --color-primary-dark: #cccccc;
+  --color-primary-contrast: #000000;
+
+  --color-background: #000000;
+  --color-surface: #000000;
+  --color-surface-variant: #333333;
+  --color-outline: #ffffff;
+  --color-outline-variant: #cccccc;
+
+  --color-on-background: #ffffff;
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #cccccc;
+
+  --color-success: #00ff00;
+  --color-warning: #ffaa00;
+  --color-error: #ff0000;
+  --color-info: #00aaff;
+}
+
+/* Blue Theme Variant */
+[data-theme="blue"] {
+  --color-primary: #1565C0;
+  --color-primary-light: #5E92F3;
+  --color-primary-dark: #003C8F;
+  --color-secondary: #FFC107;
+  --color-secondary-light: #FFF350;
+  --color-secondary-dark: #FF8F00;
+}
+
+/* Green Theme Variant */
+[data-theme="green"] {
+  --color-primary: #2E7D32;
+  --color-primary-light: #66BB6A;
+  --color-primary-dark: #1B5E20;
+  --color-secondary: #FF7043;
+  --color-secondary-light: #FFAB91;
+  --color-secondary-dark: #D84315;
+}
+
+/* Purple Theme Variant */
+[data-theme="purple"] {
+  --color-primary: #7B1FA2;
+  --color-primary-light: #BA68C8;
+  --color-primary-dark: #4A148C;
+  --color-secondary: #4CAF50;
+  --color-secondary-light: #81C784;
+  --color-secondary-dark: #2E7D32;
+}
+
+/* Security Professional Theme */
+[data-theme="security"] {
+  --color-primary: #B71C1C;
+  --color-primary-light: #F44336;
+  --color-primary-dark: #8B0000;
+  --color-secondary: #37474F;
+  --color-secondary-light: #607D8B;
+  --color-secondary-dark: #263238;
+
+  /* Risk colors are more pronounced */
+  --color-risk-low: #1B5E20;
+  --color-risk-medium: #E65100;
+  --color-risk-high: #B71C1C;
+}
+
+/* Compact Theme (for smaller screens) */
+[data-theme*="compact"] {
+  --spacing-xs: 0.125rem;
+  --spacing-sm: 0.25rem;
+  --spacing-md: 0.5rem;
+  --spacing-lg: 0.75rem;
+  --spacing-xl: 1rem;
+  --spacing-xxl: 1.5rem;
+
+  --font-size-xs: 0.625rem;
+  --font-size-sm: 0.75rem;
+  --font-size-md: 0.875rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.125rem;
+  --font-size-xxl: 1.25rem;
+  --font-size-xxxl: 1.5rem;
+
+  --border-radius-sm: 0.125rem;
+  --border-radius-md: 0.25rem;
+  --border-radius-lg: 0.5rem;
+}
+
+/* Large Text Theme (for accessibility) */
+[data-theme*="large-text"] {
+  --font-size-xs: 1rem;
+  --font-size-sm: 1.125rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 1.375rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 1.75rem;
+  --font-size-xxxl: 2.25rem;
+
+  --spacing-md: 1.25rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+}
+
+/* Print-Friendly Theme */
+[data-theme="print"] {
+  --color-primary: #000000;
+  --color-secondary: #666666;
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-on-background: #000000;
+  --color-on-surface: #000000;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+}
+
+/* Seasonal Theme Variants */
+[data-theme="spring"] {
+  --color-primary: #4CAF50;
+  --color-primary-light: #81C784;
+  --color-primary-dark: #2E7D32;
+  --color-secondary: #FF9800;
+  --color-secondary-light: #FFB74D;
+  --color-secondary-dark: #F57C00;
+}
+
+[data-theme="summer"] {
+  --color-primary: #FF9800;
+  --color-primary-light: #FFB74D;
+  --color-primary-dark: #F57C00;
+  --color-secondary: #2196F3;
+  --color-secondary-light: #64B5F6;
+  --color-secondary-dark: #1976D2;
+}
+
+[data-theme="autumn"] {
+  --color-primary: #FF5722;
+  --color-primary-light: #FF8A65;
+  --color-primary-dark: #D84315;
+  --color-secondary: #795548;
+  --color-secondary-light: #A1887F;
+  --color-secondary-dark: #5D4037;
+}
+
+[data-theme="winter"] {
+  --color-primary: #607D8B;
+  --color-primary-light: #90A4AE;
+  --color-primary-dark: #455A64;
+  --color-secondary: #E91E63;
+  --color-secondary-light: #F06292;
+  --color-secondary-dark: #C2185B;
+}
+
+/* Theme Mixins for Components */
+.theme-surface-1 {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+.theme-surface-2 {
+  background-color: var(--color-surface-variant);
+  color: var(--color-on-surface-variant);
+}
+
+.theme-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+
+.theme-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-contrast);
+}
+
+/* State-specific themes */
+.theme-success {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.theme-warning {
+  background-color: var(--color-warning);
+  color: black;
+}
+
+.theme-error {
+  background-color: var(--color-error);
+  color: white;
+}
+
+.theme-info {
+  background-color: var(--color-info);
+  color: white;
+}
+
+/* Animation preferences based on theme */
+[data-theme*="minimal"] {
+  --transition-fast: none;
+  --transition-normal: none;
+  --transition-slow: none;
+}
+
+[data-theme*="smooth"] {
+  --transition-fast: 0.2s ease-out;
+  --transition-normal: 0.3s ease-out;
+  --transition-slow: 0.5s ease-out;
+}
+
+/* Component-specific theme overrides */
+[data-theme="security"] .camera-scanner {
+  border: 2px solid var(--color-error);
+}
+
+[data-theme="security"] .scan-reticle {
+  border-color: var(--color-error);
+  box-shadow: 0 0 20px rgba(183, 28, 28, 0.3);
+}
+
+[data-theme="security"] .risk-high {
+  background-color: var(--color-error);
+  animation: pulse-urgent 2s infinite;
+}
+
+@keyframes pulse-urgent {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .camera-scanner {
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .scan-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+/* Theme transition animations */
+.theme-transition {
+  transition: 
+    background-color var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+/* Media query based theme adjustments */
+@media (max-width: 768px) {
+  [data-theme] {
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --border-radius-lg: 0.75rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    /* Auto dark theme when no explicit theme is set */
+    --color-primary: #42A5F5;
+    --color-background: #121212;
+    --color-surface: #1e1e1e;
+    --color-on-background: #ffffff;
+    --color-on-surface: #e0e0e0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-theme] {
+    --transition-fast: none;
+    --transition-normal: none;
+    --transition-slow: none;
+  }
+  
+  .pulse-urgent {
+    animation: none !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  [data-theme]:not([data-theme*="high-contrast"]) {
+    --color-outline: #000000;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  [data-theme="dark"]:not([data-theme*="high-contrast"]) {
+    --color-outline: #ffffff;
+  }
+}
+
+/* Theme utilities */
+.auto-theme {
+  color-scheme: light dark;
+}
+
+.light-theme-only {
+  color-scheme: light;
+}
+
+.dark-theme-only {
+  color-scheme: dark;
+}
+
+/* Custom theme variables for extensibility */
+:root {
+  --theme-custom-1: var(--color-primary);
+  --theme-custom-2: var(--color-secondary);
+  --theme-custom-3: var(--color-surface);
+  --theme-custom-4: var(--color-background);
+  --theme-brand-primary: var(--color-primary);
+  --theme-brand-secondary: var(--color-secondary);
+  
+  /* Pin Depth Colors for Bitting Pattern Visualization - Light Mode */
+  --pin-color-0: #e3f2fd;
+  --pin-color-1: #bbdefb;
+  --pin-color-2: #90caf9;
+  --pin-color-3: #64b5f6;
+  --pin-color-4: #42a5f5;
+  --pin-color-5: #2196f3;
+  --pin-color-6: #1e88e5;
+  --pin-color-7: #1976d2;
+  --pin-color-8: #1565c0;
+  --pin-color-9: #0d47a1;
+}
+
+/* Pin colors for dark themes */
+[data-theme="dark"],
+[data-theme="dark-high-contrast"],
+[data-theme*="dark"] {
+  --pin-color-0: #0d47a1;
+  --pin-color-1: #1565c0;
+  --pin-color-2: #1976d2;
+  --pin-color-3: #1e88e5;
+  --pin-color-4: #2196f3;
+  --pin-color-5: #42a5f5;
+  --pin-color-6: #64b5f6;
+  --pin-color-7: #90caf9;
+  --pin-color-8: #bbdefb;
+  --pin-color-9: #e3f2fd;
+}
